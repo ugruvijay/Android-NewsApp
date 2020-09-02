@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/dialog_imageView"
+        android:layout_width="300dp"
+        android:layout_height="239dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_imageView" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="300dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_purple"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title" />
+
+    <ImageButton
+        android:id="@+id/dialog_twitter"
+        android:layout_width="146dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title"
+        app:srcCompat="@drawable/bluetwitter" />
+
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="3dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:background="@android:color/holo_purple"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/dialog_bookmark"
+        app:layout_constraintStart_toEndOf="@+id/dialog_twitter"
+        app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+    <ImageButton
+        android:id="@+id/dialog_bookmark"
+        android:layout_width="149dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/dialog_twitter"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title"
+        app:srcCompat="@drawable/ic_bookmark_border_24px" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
